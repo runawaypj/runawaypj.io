@@ -12,7 +12,7 @@
   <body>
     <script>
  document.write("<img height='0' width='0' alt='' src='http://garmin-dev.neolane.net/r/"
-+  Math.random().toString() + "?tagid=home%7Ct%7CnmsWebTracking&amount=9876&article=10&currency=DOL&locale=en_US&tranDate="+new Date()+"'/>");
++  Math.random().toString() + "?tagid=home%7Ct%7CnmsWebTracking&amount=9876&article=10&currency=DOL&locale=en_US&tranDate="+<%= formatDate(new Date(), '%2D%2M%2Y %02H:%02N:%02S') %> +"'/>");
 
 </script>
 <noscript><img height='0' width='0' alt='' src='http://garmin-dev.neolane.net/r/?tagid=home%7Ct%7CnmsWebTracking'/>
